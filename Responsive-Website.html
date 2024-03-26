@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting to Know You Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Getting to Know You Survey</h1>
+        <form id="survey-form" action="#" method="post"></form>
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder="Enter your phone number">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Interests</legend>
+                <div>
+                    <label for="hobbies">What are your hobbies or interests?</label>
+                    <textarea id="hobbies" name="user_hobbies" rows="4" placeholder="Tell us about your hobbies"></textarea>
+                </div>
+                <div>
+                    <label for="favorite-food">What is your favorite food?</label>
+                    <input type="text" id="favorite-food" name="user_favorite_food" placeholder="Enter your favorite food">
+                </div>
+                <div>
+                    <label for="music-genre">What is your favorite music genre?</label>
+                    <input type="text" id="music-genre" name="user_music_genre" placeholder="Enter your favorite music genre">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>
+                    <label for="dream-destination">If you could travel anywhere in the world, where would you go?</label>
+                    <input type="text" id="dream-destination" name="user_dream_destination" placeholder="Enter your dream destination">
+                </div>
+                <div>
+                    <label for="role-model">Who is your role model and why?</label>
+                    <input type="text" id="role-model" name="user_role_model" placeholder="Tell us about your role model">
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<style>
+    /* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</html>
